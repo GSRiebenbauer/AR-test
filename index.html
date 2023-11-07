@@ -4,10 +4,11 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin: 0px; overflow: hidden;">
 	<a-scene embedded arjs="sourceType: webcam">
-	  <a-entity camera></a-entity>
-	  <a-entity position="0 0 -8">
-	  <a-box  width="2" height="2" depth="1" color="red"></a-box>
-	  </a-entity>
+	  <a-marker-camera preset="hiro">
+		<!-- Define a room for the AR experience -->
+		<a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#CCC"></a-plane>
+		<a-box position="0 2 0" width="1" height="1" depth="1" color="red"></a-box>
+	  </a-marker-camera>
 	</a-scene>
   </body>
 </html>
