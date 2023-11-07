@@ -9,9 +9,14 @@
 	  <!-- here is a kanji preset -->
 	  <a-marker preset='kanji'></a-marker>
 	  <!-- it is the same as the marker below -->
-	  <a-marker type='pattern' url='/marker.jpg'></a-marker>
+	  <a-marker type='pattern' url='/marker.jpg'>
+		  
+		  <a-box position='0 0.5 0' material='color: green;'></a-box>
+		  <a-text value="Hello, World!" position="0 2 0"></a-text>
+		  
+		  
+	  </a-marker>
 
-	  <a-text value="Hello, World!" position="0 -1 0"></a-text>
 
 	  <!-- add a simple camera -->
 	  <a-entity camera></a-entity>
